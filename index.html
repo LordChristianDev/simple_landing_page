@@ -14,6 +14,7 @@
 	<header class="appbar">
 		<div class="logo"></div>
 
+		<!-- Desktop Navigation -->
 		<nav class="nav-links">
 			<a href="#">Features</a>
 			<a href="#">How it Works</a>
@@ -22,8 +23,29 @@
 			<a href="#">FAQs</a>
 		</nav>
 
+		<!-- Desktop CTA Button -->
 		<button class="action-btn">CTA Title</button>
+
+		<!-- Mobile Menu Toggle -->
+		<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+			<div class="hamburger"></div>
+			<div class="hamburger"></div>
+			<div class="hamburger"></div>
+		</div>
 	</header>
+
+	<!-- Mobile Menu (Hidden by default) -->
+	<div class="mobile-menu" id="mobileMenu">
+		<nav class="mobile-nav-links">
+			<a href="#" onclick="closeMobileMenu()">Features</a>
+			<a href="#" onclick="closeMobileMenu()">How it Works</a>
+			<a href="#" onclick="closeMobileMenu()">Why Choose Us</a>
+			<a href="#" onclick="closeMobileMenu()">Reviews</a>
+			<a href="#" onclick="closeMobileMenu()">FAQs</a>
+		</nav>
+		<button class="mobile-action-btn" onclick="closeMobileMenu()">CTA Title</button>
+	</div>
+
 
 	<!-- Hero Section -->
 	<section class="top-section">
@@ -36,7 +58,7 @@
 					<span class="circle"></span>
 				</div>
 
-				<!-- Trusted Text - Col -->
+				<!-- Trusted Text -->
 				<div class="trusted-text">
 					<small class="label-text-small">Trusted by</small>
 					<p class="label-text-medium">200+ Customers</p>
@@ -57,8 +79,8 @@
 			</div>
 
 			<div class="hero-buttons">
-				<button class="action-btn">Primary CTA</button>
-				<button class="action-outlined-btn">Secondary CTA</button>
+				<button class="hero-action-btn">Primary CTA</button>
+				<button class="hero-action-outlined-btn">Secondary CTA</button>
 			</div>
 		</div>
 
@@ -70,7 +92,8 @@
 	<section class="client-section">
 
 		<div class="client-text">
-			<h2 class="title-text-small">WE ARE PARTNERED WITH MORE THAN 50+ COMPANIES AROUND THE GLOBE.</h2>
+			<h2 class="title-text-small client-text-content">WE ARE PARTNERED WITH MORE THAN 50+ COMPANIES AROUND THE
+				GLOBE.</h2>
 		</div>
 
 		<div class="client-wrapper">
@@ -115,7 +138,7 @@
 				</div>
 
 				<div class="service-button">
-					<button class="action-outlined-btn">Call to Action</button>
+					<button class="action-outlined-btn service-outlined-btn">Call to Action</button>
 				</div>
 				<div class="md-b service-image"></div>
 			</div>
@@ -128,7 +151,7 @@
 						tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="service-button">
-					<button class="action-outlined-btn">Call to Action</button>
+					<button class="action-outlined-btn service-outlined-btn">Call to Action</button>
 				</div>
 				<div class="md-b service-image"></div>
 			</div>
@@ -141,7 +164,7 @@
 						tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="service-button">
-					<button class="action-outlined-btn">Call to Action</button>
+					<button class="action-outlined-btn service-outlined-btn">Call to Action</button>
 				</div>
 				<div class="md-b service-image"></div>
 			</div>
@@ -154,7 +177,7 @@
 						tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="service-button">
-					<button class="action-outlined-btn">Call to Action</button>
+					<button class="action-outlined-btn service-outlined-btn">Call to Action</button>
 				</div>
 				<div class="md-b service-image"></div>
 			</div>
@@ -210,7 +233,7 @@
 	<section class="about-company-section">
 
 		<!-- Video or Image -->
-		<div class="video-image"></div>
+		<div class="video-image about-company-image"></div>
 
 		<div class="about-company-details">
 
@@ -497,6 +520,8 @@
 
 		</div>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 
 </html>
