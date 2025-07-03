@@ -734,7 +734,7 @@
 }
 
 .data-container {
-	min-width: 9.375rem;
+	min-width: 2.375rem;
 	border-radius: 0.75rem;
 	display: flex;
 	flex-direction: column;
@@ -768,7 +768,6 @@
 
 	.about-company-data {
 		flex-wrap: wrap;
-		justify-content: center;
 		gap: 2.5rem;
 	}
 }
@@ -1244,7 +1243,7 @@
 	}
 
 	.headline-text-medium {
-		font-size: 2.1875rem;
+		font-size: 2.1650rem;
 	}
 
 	.headline-text-small {
