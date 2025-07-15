@@ -1,15 +1,15 @@
 const ClientLogos = () => {
 	return (
-		<section className="flex flex-col lg:flex-row py-12 px-6 md:px-12 lg:px-24 gap-8">
+		<section className="flex flex-col lg:flex-row items-center lg:items-center py-12 px-6 md:px-12 lg:px-24 gap-8">
 			{/* Heading */}
-			<div className="mb-8 text-center lg:text-start">
-				<h2 className="text-[1.5rem] font-semibold max-w-[80rem] w-full">
+			<div className="w-full lg:w-[40%] text-center lg:text-left">
+				<h2 className="text-[1.5rem] font-semibold">
 					WE ARE PARTNERED WITH MORE THAN 50+ COMPANIES AROUND THE GLOBE
 				</h2>
 			</div>
 
 			{/* Carousel */}
-			<div className="relative">
+			<div className="relative w-full lg:w-[60%]">
 				<div className="pointer-events-none absolute left-0 top-0 h-full w-20 z-10 bg-gradient-to-r from-white via-white/80 to-transparent" />
 				<div className="pointer-events-none absolute right-0 top-0 h-full w-20 z-10 bg-gradient-to-l from-white via-white/80 to-transparent" />
 
@@ -23,10 +23,9 @@ const ClientLogos = () => {
 						/>
 					))}
 				</div>
-
 			</div>
-
 		</section>
+
 	);
 };
 

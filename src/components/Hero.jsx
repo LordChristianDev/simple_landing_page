@@ -40,7 +40,7 @@ const Hero = () => (
 		</div>
 
 		{/* Image Placeholder*/}
-		<div className="flex-1 w-full aspect-[3/2] bg-gray-200 rounded-lg shadow-inner" />
+		<div className="flex-1 w-full aspect-[3/2] bg-muted rounded-lg" />
 	</section>
 );
 

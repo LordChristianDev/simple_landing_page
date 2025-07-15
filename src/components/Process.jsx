@@ -6,16 +6,16 @@ const Process = () => (
 		<SectionHeading title="Process Section" />
 
 		{/* Process Steps */}
-		<div className="flex flex-wrap gap-8 justify-center lg:justify-between">
+		<div className="flex gap-6 overflow-x-auto lg:overflow-visible pb-5 scrollbar-hide">
 			{[1, 2, 3].map((i) => (
 				<div
 					key={i}
-					className="w-full sm:w-[80%] lg:w-[32%] p-6 flex flex-col items-center lg:items-start text-center lg:text-left"
+					className="min-w-[250px] lg:min-w-0 flex-1 max-w-sm lg:max-w-none lg:w-[32%] p-6 flex flex-col items-start text-left"
 				>
-					<div className="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-gray-200 font-bold text-2xl shadow">
+					<div className="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-muted font-bold text-2xl shadow">
 						?
 					</div>
-					<h3 className="text-3xl font-semibold mb-2">Title</h3>
+					<h3 className="text-2xl font-semibold mb-2">Title</h3>
 					<p className="text-sm text-muted-foreground">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua.
@@ -23,6 +23,7 @@ const Process = () => (
 				</div>
 			))}
 		</div>
+
 
 
 
