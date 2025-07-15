@@ -1,26 +1,31 @@
+import SectionHeading from "@/components/others/sectionHeading";
+
 const Process = () => (
-	<section className="process-section">
-		<div className="section-heading">
-			<h1 className="md-b headline-text-medium">Process Section</h1>
-			<p className="body-text-small">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-			</p>
-		</div>
-		<div className="process-all">
-			{[1, 2, 3].map(i => (
-				<div className="process-container" key={i}>
-					<div className="question-circle">?</div>
-					<div className="process-label">
-						<h3 className="ms-b title-text-medium">Title</h3>
-						<p className="body-text-small">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.
-						</p>
+	<section className="py-20 px-6 md:px-12 lg:px-24 bg-background">
+		{/* Heading */}
+		<SectionHeading title="Process Section" />
+
+		{/* Process Steps */}
+		<div className="flex flex-wrap gap-8 justify-center lg:justify-between">
+			{[1, 2, 3].map((i) => (
+				<div
+					key={i}
+					className="w-full sm:w-[80%] lg:w-[32%] p-6 flex flex-col items-center lg:items-start text-center lg:text-left"
+				>
+					<div className="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-gray-200 font-bold text-2xl shadow">
+						?
 					</div>
+					<h3 className="text-3xl font-semibold mb-2">Title</h3>
+					<p className="text-sm text-muted-foreground">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+					</p>
 				</div>
 			))}
 		</div>
+
+
+
 	</section>
 );
 
